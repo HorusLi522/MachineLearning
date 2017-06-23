@@ -1,6 +1,6 @@
 from distutils.core import setup
 
-setup(name='machine_learning',
+setup(name='machine-learning',
       version='0.0.1',
       description='Utils for machine learning',
       author='Ethan Lyon',
