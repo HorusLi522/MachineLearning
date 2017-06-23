@@ -48,8 +48,8 @@ class Spider:
 					'JOBDIR': './job', #saves job history to avoid duplicating efforts	
 					} 
 		s = Spider(parse=parse,		  
-				   start_urls=start_urls,
-		  		   settings=settings)
+				   start_urls=START_URLS,
+		  		   settings=SETTINGS)
 		s.run()  
 
 		>>> 2017-06-22 18:02:10 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: scrapybot)
