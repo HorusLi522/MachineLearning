@@ -1,0 +1,5 @@
+pandas==0.17.1
+sklearn-evaluation==0.4
+Scrapy==1.4.0
+scrapy-proxies==0.3
+scrapy-rotating-proxies==0.4
