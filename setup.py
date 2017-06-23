@@ -7,6 +7,6 @@ setup(name='MachineLearning',
       author_email='ethanyon@gmail.com',
       url='https://github.com/iethan/MachineLearning',
       # packages=[str('MachineLearning')],
-      include_package_data=True,
-      py_modules=['MachineLearning'],
+      # include_package_data=True,
+      # py_modules=['MachineLearning'],
      )
