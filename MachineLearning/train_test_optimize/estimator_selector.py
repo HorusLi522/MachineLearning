@@ -1,4 +1,4 @@
-from classifier_dictionary import clf_dict
+from .classifier_dictionary import clf_dict
 
 import pandas as pd
 
