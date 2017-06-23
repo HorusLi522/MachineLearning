@@ -6,5 +6,5 @@ setup(name='machine_learning',
       author='Ethan Lyon',
       author_email='ethanyon@gmail.com',
       url='https://github.com/iethan/machine_learning',
-      packages=[],
+      packages=[str('machine_learning')],
      )
