@@ -36,7 +36,7 @@ class CleanText:
 	'''
 	def __init__(self,raw_html):
 		self.raw_html = raw_html
-		self.soup = BeautifulSoup(self.raw_html,'html')
+		self.soup = BeautifulSoup(self.raw_html,'html.parser')
 		self.stopset = set(stopwords.words('english'))
 		self.no_scripts = self._script_removed()
 		self.stemmers = {'Snowball':SnowballStemmer('english'),
