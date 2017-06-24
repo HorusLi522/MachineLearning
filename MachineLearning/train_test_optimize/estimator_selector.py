@@ -185,10 +185,16 @@ class EstimatorSelectionHelper(FilterClassifiers):
 		data_hold = []
 		for model, params in self._models.items():
 			model_name = model.__class__.__name__
-			
-			scores = self._grid_search(model,params)									
-			data_hold.append([model_name]+scores)					
-			
+			if self.kwargs.get('ignore_errors'):
+				try:								
+					scores = self._grid_search(model,params)									
+					data_hold.append([model_name]+scores)					
+				except:
+					print('{} had an error, skipping and proceeding'.format(model_name))
+			else:
+				scores = self._grid_search(model,params)									
+				data_hold.append([model_name]+scores)	
+
 		self.score_summary_data = data_hold
 
 	def score_summary(self):

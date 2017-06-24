@@ -55,11 +55,8 @@ class CleanText:
 			script.extract()    
 		
 		text = self.soup.get_text(separator=u' ')
-
 		lines = (line.strip() for line in text.splitlines())
-
 		chunks = (phrase.strip() for line in lines for phrase in line.split("  "))
-
 		text = ' '.join(chunk for chunk in chunks if chunk)
 
 		return text
